@@ -9,14 +9,13 @@ export const useSetAccount = () => {
   const dispatch = useDispatch();
   const getData = useCallback(async () => {
     try {
-      const provider = typeof window !== 'undefined' && window.ethereum;
-      if (provider) {
-        // Memo: Required in production
-        const addresses = await provider.enable();
+      if (typeof window !== 'undefined' && window.ethereum) {
+        const provider = window.ethereum;
+        const addresses = await provider.request({ method: 'eth_requestAccounts' });
         const address = addresses[0];
         dispatch(actionSetAddress({ address }));
         provider.on('accountsChanged', async (it: string[]) => {
-          await provider.enable();
+          await provider.request({ method: 'eth_requestAccounts' });
           const address = it[0];
           dispatch(actionSetAddress({ address }));
         });
