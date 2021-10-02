@@ -9,8 +9,8 @@ export const useSetAccount = () => {
   const dispatch = useDispatch();
   const getData = useCallback(async () => {
     try {
-      if (typeof window !== 'undefined') {
-        const provider = window.ethereum;
+      const provider = typeof window !== 'undefined' && window.ethereum;
+      if (provider) {
         // Memo: Required in production
         const addresses = await provider.enable();
         const address = addresses[0];
