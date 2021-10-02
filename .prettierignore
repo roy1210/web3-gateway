@@ -1,0 +1,6 @@
+/.next
+/**/*.md
+/**/*.yaml
+/**/*.js
+/.vercel
+/node_modules

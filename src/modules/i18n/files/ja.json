@@ -1,0 +1,8 @@
+{
+  "toast.metamask-is-selected-same-network": "メタマスクは既に選択されたネットワークに接続されております!",
+  "toast.metamask-undefined": "ブラウザにはメタマスクがインストールされておりません",
+  "card.network": "ネットワーク",
+  "card.chain-id": "チェーン ID",
+  "card.coin-symbol": "コインシンボル",
+  "card.add-to-metamask": "メタマスクへ追加"
+}

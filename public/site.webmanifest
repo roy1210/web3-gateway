@@ -1,0 +1,19 @@
+{
+  "name": "Web3 Gateway",
+  "short_name": "Web3 Gateway",
+  "icons": [
+    {
+      "src": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/high-voltage_26a1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/high-voltage_26a1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2b374a",
+  "background_color": "#2b374a",
+  "display": "standalone"
+}

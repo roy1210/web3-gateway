@@ -1,0 +1,13 @@
+{
+  "toast.metamask-is-selected-same-network": "您的MetaMask已連到此網路!",
+  "toast.metamask-undefined": "您的瀏覽器偵測不到MetaMask",
+  "common.cookies": "This website uses cookies. By clicking CONTINUE, you consent to our use of these cookies.",
+  "common.cookies.continue": "CONTINUE",
+  "title.add-custom-network": "⚡️ Blazing fast dApps connection",
+  "card.network": "網路",
+  "card.chain-id": "網路 ID",
+  "card.coin-symbol": "代幣",
+  "card.block-explorer": "區塊鏈瀏覽器",
+  "card.rpc": "RPC",
+  "card.add-to-metamask": "加到MetaMask"
+}

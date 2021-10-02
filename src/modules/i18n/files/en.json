@@ -1,0 +1,18 @@
+{
+  "common.cookies": "This website uses cookies. By clicking CONTINUE, you consent to our use of these cookies.",
+  "common.cookies.continue": "CONTINUE",
+  "toast.metamask-is-selected-same-network": "Your MetaMask is already connected this network!",
+  "toast.metamask-undefined": "MetaMask is not detected on your browser!",
+  "title.add-custom-network": "⚡️ Blazing fast dApps connection",
+  "donation.buy-me-a": "Buy me a",
+  "donation.thank-you": "Thanks for your support 😃",
+  "donation.toast-thank-you": "Copied wallet address! Thank you!",
+  "donation.address-format": "{value} Address",
+  "card.network": "Network",
+  "card.chain-id": "Chain ID",
+  "card.coin-symbol": "Coin Symbol",
+  "card.block-explorer": "Block Explorer",
+  "card.rpc": "RPC",
+  "card.bal": "Bal.",
+  "card.add-to-metamask": "Add to MetaMask"
+}

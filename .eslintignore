@@ -1,0 +1,6 @@
+/.next
+/**/*.md
+/**/*.yaml
+/.vercel
+/node_modules
+next-env.d.ts
