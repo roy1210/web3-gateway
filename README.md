@@ -2,7 +2,8 @@
 
 # Web3 Gateway
 
-A SPA for add custom networks to MetaMask with once click
+A SPA for add custom networks to MetaMask with once click.<br />
+This is a Next.js project bootstrapped with create-next-app.
 
 ## Environment
 
@@ -12,6 +13,14 @@ v14.17.3
 $ yarn -vs
 v1.22.10
 ```
+
+## How To Use
+
+```bash
+yarn
+yarn dev
+```
+
 ## Dependencies
 
 ### For Application
@@ -66,13 +75,6 @@ v1.22.10
 
 - [yarn](https://yarnpkg.com/)
   - Fast, reliable, and secure dependency management.
-
-## How To Use
-
-```bash
-yarn
-yarn dev
-```
 
 ## Translation
 
