@@ -206,7 +206,7 @@ export const rpcUrls = {
   [CHAIN.BSC_TESTNET]: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
   [CHAIN.POLYGON_MAINNET]: ['https://rpc-mainnet.maticvigil.com'],
   [CHAIN.POLYGON_TESTNET]: ['https://rpc-mumbai.maticvigil.com'],
-  [CHAIN.SHIDEN_MAINNET]: ['https://rpc.shiden.astar.network:8545'],
+  [CHAIN.SHIDEN_MAINNET]: ['https://shiden.api.onfinality.io/public'],
   [CHAIN.SHIDEN_TESTNET]: ['https://rpc.shibuya.astar.network:8545'],
   [CHAIN.AVALANCH_MAINNET]: ['https://api.avax.network/ext/bc/C/rpc'],
   [CHAIN.AVALANCH_TESTNET]: ['https://api.avax-test.network/ext/bc/C/rpc'],
