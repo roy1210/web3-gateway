@@ -5,7 +5,7 @@ import { DEPLOYED_URL } from '../env';
 
 export const SEO = () => {
   const url = DEPLOYED_URL;
-  const content = 'Add custom networks to MetaMask with once click';
+  const content = 'Add custom networks to MetaMask with one click';
   const title = 'Web3 Gateway';
   const image = 'https://dl.dropboxusercontent.com/s/pdo3ngfcmclj62q/web3-gateway-og-dark.jpg';
 
