@@ -145,6 +145,7 @@ export const ChainCard = ({
               (async () => {
                 try {
                   const result = await setupNetwork(networkId);
+
                   if (result === metamaskRes.alreadyConnected) {
                     createToast({
                       content: <FormattedMessage id="toast.metamask-is-selected-same-network" />,
@@ -159,6 +160,14 @@ export const ChainCard = ({
                       content: <FormattedMessage id="toast.metamask-undefined" />,
                       type: 'danger',
                       toastId: `Metamask-is-not-connected-${networkId}`,
+                      autoClose: true,
+                    });
+                  }
+                  if (!result) {
+                    createToast({
+                      content: <FormattedMessage id="toast.failed-connection" />,
+                      type: 'danger',
+                      toastId: `Failed-connection-${networkId}`,
                       autoClose: true,
                     });
                   }

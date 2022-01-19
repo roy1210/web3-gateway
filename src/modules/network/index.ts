@@ -6,6 +6,7 @@ import logoArbitrum from '../../../public/icons/arbitrum.svg';
 import logoFantom from '../../../public/icons/fantom.svg';
 import logoOp from '../../../public/icons/op.svg';
 import logoTheta from '../../../public/icons/theta.svg';
+import logoAstar from '../../../public/icons/astar.png';
 
 export { getChainData, setupNetwork } from './utils';
 
@@ -21,6 +22,8 @@ export enum CHAIN {
   OPTIMISTIC_TESTNET = '69',
   BSC_MAINNET = '56',
   BSC_TESTNET = '97',
+  ASTAR_MAINNET = '592',
+  ASTAR_TESTNET = '81',
   SHIDEN_MAINNET = '336',
   SHIDEN_TESTNET = '81',
   POLYGON_MAINNET = '137',
@@ -42,8 +45,10 @@ export const logo = {
   [CHAIN.BSC_TESTNET]: logoBsc,
   [CHAIN.POLYGON_MAINNET]: logoPolygon,
   [CHAIN.POLYGON_TESTNET]: logoPolygon,
+  [CHAIN.ASTAR_MAINNET]: logoAstar,
+  [CHAIN.ASTAR_TESTNET]: logoAstar,
   [CHAIN.SHIDEN_MAINNET]: logoShiden,
-  [CHAIN.SHIDEN_TESTNET]: logoShiden,
+  [CHAIN.SHIDEN_TESTNET]: logoAstar,
   [CHAIN.AVALANCH_MAINNET]: logoAvalanche,
   [CHAIN.AVALANCH_TESTNET]: logoAvalanche,
   [CHAIN.FANTOM_MAINNET]: logoFantom,
@@ -61,8 +66,10 @@ export const chainNameTitle = {
   [CHAIN.BSC_TESTNET]: 'Binance Smart Chain',
   [CHAIN.POLYGON_MAINNET]: 'Polygon',
   [CHAIN.POLYGON_TESTNET]: 'Polygon',
+  [CHAIN.ASTAR_MAINNET]: 'Astar Network',
+  [CHAIN.ASTAR_TESTNET]: 'Astar Network',
   [CHAIN.SHIDEN_MAINNET]: 'Shiden Network',
-  [CHAIN.SHIDEN_TESTNET]: 'Shiden Network',
+  [CHAIN.SHIDEN_TESTNET]: 'ASTAR / Shiden',
   [CHAIN.AVALANCH_MAINNET]: 'Avalanche Network',
   [CHAIN.AVALANCH_TESTNET]: 'Avalanche Network',
   [CHAIN.FANTOM_MAINNET]: 'Fantom',
@@ -80,6 +87,8 @@ export const chainNameShort = {
   [CHAIN.BSC_TESTNET]: 'Testnet',
   [CHAIN.POLYGON_MAINNET]: 'Mainnet',
   [CHAIN.POLYGON_TESTNET]: 'Mumbai Testnet',
+  [CHAIN.ASTAR_MAINNET]: 'Mainnet',
+  [CHAIN.ASTAR_TESTNET]: 'Shibuya Testnet',
   [CHAIN.SHIDEN_MAINNET]: 'Mainnet',
   [CHAIN.SHIDEN_TESTNET]: 'Shibuya Testnet',
   [CHAIN.AVALANCH_MAINNET]: 'Mainnet',
@@ -102,6 +111,8 @@ export const chainName = {
   [CHAIN.BSC_TESTNET]: 'Binance Smart Chain Testnet',
   [CHAIN.POLYGON_MAINNET]: 'Polygon Mainnet',
   [CHAIN.POLYGON_TESTNET]: 'Mumbai Testnet',
+  [CHAIN.ASTAR_MAINNET]: 'Astar Network Mainnet',
+  [CHAIN.ASTAR_TESTNET]: 'Shibuya Testnet',
   [CHAIN.SHIDEN_MAINNET]: 'Shiden Network Mainnet',
   [CHAIN.SHIDEN_TESTNET]: 'Shibuya Testnet',
   [CHAIN.AVALANCH_MAINNET]: 'Avalanche Network Mainnet',
@@ -152,6 +163,16 @@ export const nativeCurrency = {
   [CHAIN.POLYGON_TESTNET]: {
     name: 'MATIC',
     symbol: 'matic',
+    decimals: 18,
+  },
+  [CHAIN.ASTAR_MAINNET]: {
+    name: 'ASTR',
+    symbol: 'astr',
+    decimals: 18,
+  },
+  [CHAIN.ASTAR_TESTNET]: {
+    name: 'SBY',
+    symbol: 'sby',
     decimals: 18,
   },
   [CHAIN.SHIDEN_MAINNET]: {
@@ -206,6 +227,8 @@ export const rpcUrls = {
   [CHAIN.BSC_TESTNET]: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
   [CHAIN.POLYGON_MAINNET]: ['https://rpc-mainnet.maticvigil.com'],
   [CHAIN.POLYGON_TESTNET]: ['https://rpc-mumbai.maticvigil.com'],
+  [CHAIN.ASTAR_MAINNET]: ['https://rpc.astar.network:8545'],
+  [CHAIN.ASTAR_TESTNET]: ['https://rpc.shibuya.astar.network:8545'],
   [CHAIN.SHIDEN_MAINNET]: ['https://rpc.shiden.astar.network:8545'],
   [CHAIN.SHIDEN_TESTNET]: ['https://rpc.shibuya.astar.network:8545'],
   [CHAIN.AVALANCH_MAINNET]: ['https://api.avax.network/ext/bc/C/rpc'],
@@ -226,6 +249,8 @@ export const blockExplorerUrls = {
   [CHAIN.BSC_TESTNET]: ['https://testnet.bscscan.com'],
   [CHAIN.POLYGON_MAINNET]: ['https://explorer.matic.network'],
   [CHAIN.POLYGON_TESTNET]: ['https://mumbai-explorer.matic.today'],
+  [CHAIN.ASTAR_MAINNET]: ['https://astar.subscan.io'],
+  [CHAIN.ASTAR_TESTNET]: ['https://shibuya.subscan.io'],
   [CHAIN.SHIDEN_MAINNET]: ['https://shiden.subscan.io'],
   [CHAIN.SHIDEN_TESTNET]: ['https://shibuya.subscan.io'],
   [CHAIN.AVALANCH_MAINNET]: ['https://cchain.explorer.avax.network'],

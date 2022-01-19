@@ -24,6 +24,7 @@ export const getChainData = (chainId: string) => {
 
 export const setupNetwork = async (network: string): Promise<boolean | string> => {
   const provider = typeof window !== 'undefined' && window.ethereum;
+
   if (provider) {
     const chain = parseInt(network, 10);
     const chainId = `0x${chain.toString(16)}`;
@@ -56,3 +57,16 @@ export const setupNetwork = async (network: string): Promise<boolean | string> =
     return metamaskRes.undefined;
   }
 };
+
+// const timeout = async (mSec: number) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(false);
+//     }, mSec);
+//   });
+// };
+
+// Timeout example
+// export const setupNetwork = (network: string) => {
+//   return Promise.race([timeout(15 * 1000), setupNetworkConfig(network)]);
+// };

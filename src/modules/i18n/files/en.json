@@ -3,6 +3,7 @@
   "common.cookies.continue": "CONTINUE",
   "toast.metamask-is-selected-same-network": "Your MetaMask is already connected this network!",
   "toast.metamask-undefined": "MetaMask is not detected on your browser!",
+  "toast.failed-connection": "Failed connecting to RPC endpoint",
   "title.add-custom-network": "⚡️ Blazing fast dApps connection",
   "donation.buy-me-a": "Buy me a",
   "donation.thank-you": "Thanks for your support 😃",

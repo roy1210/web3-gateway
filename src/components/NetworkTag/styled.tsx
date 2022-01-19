@@ -15,6 +15,9 @@ const COLOR_ARBITRUM = `-webkit-linear-gradient(
 const COLOR_THETA = `-webkit-linear-gradient(
 -45deg, #54B4E8 0%, #55C2CF  50%, #5EE1BE 100%)`;
 
+const COLOR_ASTAR = `-webkit-linear-gradient(
+  -45deg, #c94de8 20%, #2db8e2 60%, #0959af 100%)`;
+
 const testnet = css`
   background: ${transparentize(0.5, COLOR_TESTNET)};
   background-image: repeating-linear-gradient(
@@ -40,6 +43,12 @@ const bsc = css`
 const shiden = css`
   background: #703ccc;
   background: ${COLOR_SHIDEN};
+  color: ${({ theme }) => theme.comet.color.danger.text};
+`;
+
+const astar = css`
+  background: #703ccc;
+  background: ${COLOR_ASTAR};
   color: ${({ theme }) => theme.comet.color.danger.text};
 `;
 
@@ -105,6 +114,7 @@ export const Container = styled.div<{ chain: string; isActive: boolean; isMainne
   ${({ chain, isActive }) => chain === 'Optimism' && isActive && avalanche};
   ${({ chain, isActive }) => chain === 'Fantom' && isActive && fantom};
   ${({ chain, isActive }) => chain === 'Theta' && isActive && theta};
+  ${({ chain, isActive }) => chain === 'Astar' && isActive && astar};
 
   ${({ isMainnet, isActive }) => !isMainnet && isActive && testnet};
 `;

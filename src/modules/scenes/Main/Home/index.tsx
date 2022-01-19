@@ -16,19 +16,19 @@ export const Home = () => {
 
   const primaryChains = [
     {
-      mainnet: CHAIN.ARBITRUM_MAINNET,
-      testnet: CHAIN.ARBITRUM_TESTNET,
-      tag: { mainnet: 'Arbitrum', testnet: 'Rinkby' },
-    },
-    {
-      mainnet: CHAIN.OPTIMISTIC_MAINNET,
-      testnet: CHAIN.OPTIMISTIC_TESTNET,
-      tag: { mainnet: 'Optimism', testnet: 'Kovan' },
+      mainnet: CHAIN.ASTAR_MAINNET,
+      testnet: CHAIN.ASTAR_TESTNET,
+      tag: { mainnet: 'Astar', testnet: 'Shibuya' },
     },
     {
       mainnet: CHAIN.SHIDEN_MAINNET,
       testnet: CHAIN.SHIDEN_TESTNET,
       tag: { mainnet: 'Shiden', testnet: 'Shibuya' },
+    },
+    {
+      mainnet: CHAIN.ARBITRUM_MAINNET,
+      testnet: CHAIN.ARBITRUM_TESTNET,
+      tag: { mainnet: 'Arbitrum', testnet: 'Rinkby' },
     },
   ];
 
@@ -37,6 +37,11 @@ export const Home = () => {
       mainnet: CHAIN.AVALANCH_MAINNET,
       testnet: CHAIN.AVALANCH_TESTNET,
       tag: { mainnet: 'Avalanche', testnet: 'Fuji' },
+    },
+    {
+      mainnet: CHAIN.OPTIMISTIC_MAINNET,
+      testnet: CHAIN.OPTIMISTIC_TESTNET,
+      tag: { mainnet: 'Optimism', testnet: 'Kovan' },
     },
     {
       mainnet: CHAIN.POLYGON_MAINNET,
