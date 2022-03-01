@@ -229,7 +229,7 @@ export const rpcUrls = {
   [CHAIN.POLYGON_TESTNET]: ['https://rpc-mumbai.maticvigil.com'],
   [CHAIN.ASTAR_MAINNET]: ['https://rpc.astar.network:8545'],
   [CHAIN.ASTAR_TESTNET]: ['https://rpc.shibuya.astar.network:8545'],
-  [CHAIN.SHIDEN_MAINNET]: ['https://rpc.shiden.astar.network:8545'],
+  [CHAIN.SHIDEN_MAINNET]: ['https://evm.shiden.astar.network'],
   [CHAIN.SHIDEN_TESTNET]: ['https://rpc.shibuya.astar.network:8545'],
   [CHAIN.AVALANCH_MAINNET]: ['https://api.avax.network/ext/bc/C/rpc'],
   [CHAIN.AVALANCH_TESTNET]: ['https://api.avax-test.network/ext/bc/C/rpc'],
